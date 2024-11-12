@@ -1,0 +1,65 @@
+body{
+    background-image: repeating-radial-gradient(rebeccapurple, yellowgreen, blueviolet);
+}
+.carousel-inner img {
+    max-height: 400px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image scales properly */
+}
+.carousel {
+    max-height: 500px; /* Adjust this value as needed */
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+h2{
+    text-align: center;
+    text-decoration: underline overline;
+    text-decoration-color: gold;
+}
+h2:hover{
+    text-decoration-color: lime;
+}
+h1 {
+    font-size: 5rem; /* Adjust font size as needed */
+    position: relative;
+    color: black; /* Text color */
+    background: linear-gradient(90deg, #ffeb3b, #ffffff, #ffeb3b);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-position 0.9s ease;
+}
+
+h1:hover {
+    background-position: 100%; /* Moves the gradient to create a shiny effect */
+    animation: shine 1s forwards;
+}
+
+@keyframes shine {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
+p {
+    font-size: 1.2rem; /* Adjust font size for readability */
+    line-height: 1.6; /* Space between lines */
+    background: linear-gradient(90deg, #0e0808, #32200b); /* Gradient text color */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 500; /* Slightly bold text */
+    padding: 10px 20px; /* Adds padding around the text */
+    border-radius: 8px; /* Rounds the corners */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+p:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
